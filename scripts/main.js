@@ -1,0 +1,1 @@
+// Javascript stuff goes in this file and folder
