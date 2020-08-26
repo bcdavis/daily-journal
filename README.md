@@ -1,0 +1,1 @@
+I drew my wireframe on paper because I used up all my free boards on sketchboard.io. I'll get pictures of those up later. 
