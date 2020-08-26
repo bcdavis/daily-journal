@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+
+        </div>
+
+    </header>
+    <main>
+        <section class="addEntry">
+            <h2>Ben's Daily Journal</h2>
+            <div class="entryFormsBox">
+                <form action="" class="form-left-stack">
+                    <fieldset>
+                        <label for="journalDate">Date of entry</label>
+                        <input type="date" name="journalDate" id="journalDate">
+                    </fieldset>
+                </form>
+                <form action="" class="form-left-stack">
+                    <fieldset>
+                        <label for="conceptsCovered">Concept(s) Covered</label>
+                        <input type="text" name="conceptsCovered" id="conceptsCovered">
+                    </fieldset>
+                </form>
+                <form action="" class="form-left-stack">
+                    <fieldset>
+                        <label for="mood">Mood</label>
+                        <select name="mood" id="journalDate" size="6">
+                            <option value="content">Content</option>
+                            <option value="happy">Happy</option>
+                            <option value="upset">Upset</option>
+                            <option value="frustrated">Frustrated</option>
+                            <option value="bored">Bored</option>
+                            <option value="tired">Tired</option>
+                        </select>
+                    </fieldset>
+                </form>
+                <form action="" class="form-right-fill">
+                    <fieldset>
+                        <label for="entryText">Entry Text</label>
+                        <input type="text" name="entryText" id="entryText">
+                    </fieldset>
+                </form>
+                <div class="recordEntryBtn-clearAll">
+                    <button onclick=recordEntry()>Record Journal Entry</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="journal">
+            <div class="journalEntryList">
+                <ul>
+                    <li>
+                        <div class="entry">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="entry">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="entry">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="entry">
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
