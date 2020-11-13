@@ -4,53 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="logo">
-
+            <img src="/logo/journal-logo.png" alt="Daily Journal Logo">
         </div>
 
     </header>
     <main>
         <section class="addEntry">
             <h2>Ben's Daily Journal</h2>
-            <div class="entryFormsBox">
-                <form action="" class="form-left-stack">
-                    <fieldset>
-                        <label for="journalDate">Date of entry</label>
-                        <input type="date" name="journalDate" id="journalDate">
-                    </fieldset>
-                </form>
-                <form action="" class="form-left-stack">
-                    <fieldset>
-                        <label for="conceptsCovered">Concept(s) Covered</label>
-                        <input type="text" name="conceptsCovered" id="conceptsCovered">
-                    </fieldset>
-                </form>
-                <form action="" class="form-left-stack">
-                    <fieldset>
-                        <label for="mood">Mood</label>
-                        <select name="mood" id="journalDate" size="6">
-                            <option value="content">Content</option>
-                            <option value="happy">Happy</option>
-                            <option value="upset">Upset</option>
-                            <option value="frustrated">Frustrated</option>
-                            <option value="bored">Bored</option>
-                            <option value="tired">Tired</option>
-                        </select>
-                    </fieldset>
-                </form>
-                <form action="" class="form-right-fill">
-                    <fieldset>
-                        <label for="entryText">Entry Text</label>
-                        <input type="text" name="entryText" id="entryText">
-                    </fieldset>
-                </form>
-                <div class="recordEntryBtn-clearAll">
-                    <button onclick=recordEntry()>Record Journal Entry</button>
+            <div class="formsBox">
+                <div class="smallFormsBox-left">
+                    <form action="" class="form-left-stack">
+                        <fieldset>
+                            <label for="journalDate">Date of entry</label>
+                            <input type="date" name="journalDate" id="journalDate">
+                        </fieldset>
+                    </form>
+                    <form action="" class="form-left-stack">
+                        <fieldset>
+                            <label for="conceptsCovered">Concept(s) Covered</label>
+                            <input type="text" name="conceptsCovered" id="conceptsCovered">
+                        </fieldset>
+                    </form>
+                    <div class="form-left-stack">
+                        <fieldset>
+                        <label for="mood">Current mood</label>
+                            <select class="formInput">
+                                <option value = "happy">Happy</option>
+                                <option value = "sad">Sad</option>
+                                <option value = "overwhelmed">Overwhelmed</option>
+                                <option value = "giddy">Giddy</option>
+                            </select><br>
+                        </fieldset>
+                    </div>
                 </div>
+                <div class="bigFormBox-right">
+                    <form action="" class="form-right-fill">
+                        <fieldset>
+                            <label for="entryText">Entry Text</label>
+                            <input type="text" name="entryText" id="entryText" placeholder="what goes here?">
+                                <textarea placeholder="text here, please"></textarea>
+                            </input>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="recordEntryBtn-clearAll-center">
+                <button id="recordEntryBtn" onclick="recordEntry()" disabled="true">Record Journal Entry</button>
             </div>
         </section>
 
@@ -59,22 +65,22 @@
                 <ul>
                     <li>
                         <div class="entry">
-                            
+                            Entry 1
                         </div>
                     </li>
                     <li>
                         <div class="entry">
-                            
+                            Entry 2
                         </div>
                     </li>
                     <li>
                         <div class="entry">
-                            
+                            Entry 3
                         </div>
                     </li>
                     <li>
                         <div class="entry">
-                            
+                            Entry 4
                         </div>
                     </li>
                 </ul>
@@ -83,8 +89,52 @@
 
     </main>
     <footer>
-
+        <div class="flexRow-content">
+            <div>
+                <a>© 2020 Ben Davis</a>
+            </div>
+            <div>
+                <a href="https://github.com/bcdavis" target="_blank">GitHub</a>
+            </div>
+        </div>
     </footer>
     
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
+
+<!-- 
+<div class="inputCard">
+    <h2>Journal Entry</h2>
+    
+    <div class = "formBox">
+        <form>
+                <div class="formRow">
+                    <label for="entryDate" class="formLabel">Entry Date:</label>
+                    <input type="date" id="entryDate" name="entryDate" class="formInput"><br>
+                </div>
+
+                <div class="formRow">
+                    <label for="entryConcepts" class="formLabel">Concepts Covered:</label>
+                    <input type="text" id="entryConcepts" name="entryConcepts" class="formInput"><br>
+                </div>
+
+                <div class="formRow">
+                    <label for="entryText" class="formLabel">Today's Entry</label>
+                    <textarea rows="4" class="formInput">write today's entry HERE</textarea> 
+                </div>
+
+                <div class="formRow">
+                    <label class="formLabel">Select list</label>
+                        <select class="formInput">
+                        <option value = "happy">Happy</option>
+                        <option value = "sad">Sad</option>
+                        <option value = "overwhelmed">Overwhelmed</option>
+                        <option value = "giddy">Giddy</option>
+                        </select><br>
+                </div>
+        </form>
+    </div>
+    <div class="formSubmit">
+        <button type="submit" form="form1" value="Submit" class="submitButton">Submit</button>
+    </div> -->
